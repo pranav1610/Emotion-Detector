@@ -39,16 +39,14 @@ async function handle(event)
     //convert the emotionData to printable string!
     var resultString = `
     <h3>Your Emotions:</h3>
-    <ul>
-        <li>anger: ${emotionData.anger}</li>
-        <li>contempt: ${emotionData.contempt}</li>
-        <li>disgust: ${emotionData.disgust}</li>
-        <li>fear: ${emotionData.fear}</li>
-        <li>happiness: ${emotionData.happiness}</li>
-        <li>neutral: ${emotionData.neutral}</li>
-        <li>sadness: ${emotionData.sadness}</li>
-        <li>surprise: ${emotionData.surprise}</li>
-    </ul>
+    <p>anger: ${emotionData.anger}</p>
+    <p>contempt: ${emotionData.contempt}</p>
+    <p>disgust: ${emotionData.disgust}</p>
+    <p>fear: ${emotionData.fear}</p>
+    <p>happiness: ${emotionData.happiness}</p>
+    <p>neutral: ${emotionData.neutral}</p>
+    <p>sadness: ${emotionData.sadness}</p>
+    <p>surprise: ${emotionData.surprise}</p>
     `
     //jQuery to display to above string in html!!!
     $("emotion").html(resultString);
