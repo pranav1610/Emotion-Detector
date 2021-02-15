@@ -9,7 +9,7 @@ async function handle(event)
     console.log("Submitting Face...");
 
     //Informs the user that the photo uploaded is being processed
-    $("output").html("Loading...");
+    $("#emotion").html("Loading...");
     
     //Prevents auto-submission - prevents uploading without being processed
     event.preventDefault();
@@ -33,7 +33,7 @@ async function handle(event)
     var emotionData = data.result[0].faceAttributes.emotion;
 
     //to check if this code makes a request to the Azure Function
-    console.log(emotion);
+    console.log(emotionData);
 
 
     //convert the emotionData to printable string!
@@ -49,6 +49,6 @@ async function handle(event)
     <p>surprise: ${emotionData.surprise}</p>
     `
     //jQuery to display to above string in html!!!
-    $("emotion").html(resultString);
+    $("#emotion").html(resultString);
 
 }
