@@ -5,6 +5,7 @@ Link to azure function(expired June 2021): https://pranavpatel.azurewebsites.net
 ## Details
 The service dectects emotions based of the coordinates of the following parts of the face:
 
+![faceapi](https://user-images.githubusercontent.com/77756530/184983325-f2743cfa-07ef-4c31-9cb8-de13c3d10da2.png)
 ![landmarks 1](https://user-images.githubusercontent.com/77756530/146632745-31bfee5a-8f8a-45aa-a0d8-0d9c7a0a6d19.jpg)
 
 ## Specifications
